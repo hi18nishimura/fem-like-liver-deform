@@ -1,0 +1,10 @@
+{
+  "num_nodes": 100,
+  "youngs_modulus": 3000.0,
+  "poisson_ratio": 0.45,
+  "num_load_steps": 10,
+  "boundary_conditions": {
+    "fixed_nodes": [],
+    "applied_forces": []
+  }
+}

@@ -1,0 +1,17 @@
+# 深層学習フレームワーク
+torch>=2.2.0
+torchvision>=0.17.0
+
+# データ処理
+numpy>=1.26.0
+pandas>=2.2.0
+scipy>=1.12.0
+
+# 可視化
+matplotlib>=3.8.0
+
+# Jupyter
+jupyterlab>=4.1.0
+
+# 開発ツール
+pytest>=8.0.0

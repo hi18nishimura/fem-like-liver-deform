@@ -1,0 +1,41 @@
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: fem-like-liver-deform:latest
+    container_name: fem-liver-deform
+    volumes:
+      - ..:/workspace
+    working_dir: /workspace
+    environment:
+      - PYTHONPATH=/workspace
+    stdin_open: true
+    tty: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+  jupyter:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: fem-like-liver-deform:latest
+    container_name: fem-liver-jupyter
+    volumes:
+      - ..:/workspace
+    working_dir: /workspace
+    environment:
+      - PYTHONPATH=/workspace
+    ports:
+      - "8888:8888"
+    command: >
+      jupyter lab
+      --ip=0.0.0.0
+      --port=8888
+      --no-browser
+      --allow-root

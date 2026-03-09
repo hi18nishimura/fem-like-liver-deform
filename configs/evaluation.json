@@ -1,0 +1,11 @@
+{
+  "data_path": "data/processed/dataset.csv",
+  "checkpoint_path": "outputs/checkpoints/model_final.pth",
+  "output_dir": "outputs/evaluation",
+  "model": {
+    "input_dim": 64,
+    "hidden_dim": 256,
+    "output_dim": 64,
+    "num_layers": 4
+  }
+}
