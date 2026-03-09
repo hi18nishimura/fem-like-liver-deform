@@ -1,3 +1,10 @@
+# プロジェクト固有
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+outputs/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

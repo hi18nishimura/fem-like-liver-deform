@@ -1,0 +1,13 @@
+{
+  "data_path": "data/processed/dataset.csv",
+  "output_dir": "outputs/checkpoints",
+  "model": {
+    "input_dim": 64,
+    "hidden_dim": 256,
+    "output_dim": 64,
+    "num_layers": 4
+  },
+  "learning_rate": 0.001,
+  "batch_size": 32,
+  "num_epochs": 100
+}
